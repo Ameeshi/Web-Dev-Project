@@ -1,0 +1,221 @@
+<!DOCTYPE = html> 
+<html lang = "en"> 
+<head>
+
+	<meta name = "author" content = "Ameeshi Goel">  
+	<title> Prantl's Bakery - Home </title>
+
+	<!-- DATA VISUALIZATION is my additional feature -->
+
+	<link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+	<link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery-ui.css">
+	<link rel = "stylesheet" media = "all" type = "text/css" href = "css/jquery.lightbox.css">
+
+	<script type = "text/javascript" src = "js/jquery-3.2.0.min.js"> </script> 
+	<script type = "text/javascript" src = "js/scripts.js"> </script>
+	<script type = "text/javascript" src = "js/jquery-ui.js"> </script> 
+	<script type = "text/javascript" src = "js/jquery.lightbox.min.js"> </script>  
+
+	<script src = "http://code.highcharts.com/highcharts.js"></script>
+    <script src = "http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script> 
+		$(function() {
+			$("#accordion").accordion();
+		});
+	</script> 
+
+	<script>
+		$(function() {
+			$("#tabs").tabs({
+				event: "mouseover"
+			});
+		});
+	</script>
+
+	<script type = "text/javaScript"> 
+		$(function() {
+			$('#gallery a').lightBox();
+		});
+	</script> 
+
+     <script type = "text/javaScript"> 
+		$(function() {
+			$('#container-graph1').highcharts({
+				title: {
+        			text: 'Popular Times at the Shadyside branch'
+   				 },
+
+			    subtitle: {
+			        text: 'Average per day'
+			    },
+
+			    yAxis: {
+			        title: {
+			            text: 'Number of people'
+			        }
+			    },
+
+			    xAxis: {
+			    	title: {
+			    		text: 'Times'
+			    	},
+			    	categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+			    },
+			    
+			    series: [{
+			        data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+			    }]
+
+			});
+		});
+	</script>
+
+	 <script type = "text/javaScript"> 
+		$(function() {
+			$('#container-graph2').highcharts({
+				title: {
+        			text: 'Popular Times at the Downtown branch'
+   				 },
+
+			    subtitle: {
+			        text: 'Average per day'
+			    },
+
+			    yAxis: {
+			        title: {
+			            text: 'Number of people'
+			        }
+			    },
+
+			    xAxis: {
+			    	title: {
+			    		text: 'Times'
+			    	},
+			    	categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+			    },
+			    
+			    series: [{
+			        data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+			    }]
+
+			});
+		});
+	</script>
+
+
+</head>
+
+<body background = "images/bg.png"> 
+	<!--http://www.paleohub.info/key/p/words-pastel-green-background.html-->
+<a href = "index.html" class = "selected"> <div id = "logo"> <img src = "images/prantls1.png" alt = "photo"> </div> </a> 
+
+	<br/>
+
+	<div id = "container">
+
+		<div id = "top_row">
+			<nav>
+				<a href = "index.html" class = "selected"> Home </a> 
+				<a href = "about.html"> About Us </a> 
+				<a href = "stores.html"> Store Info </a> 
+				<a href = "occasions.html"> Occasions </a> 
+				<a href = "contact.html"> Contact </a> 
+				<a href = "data.html"> Data </a> 
+			</nav>
+
+		</div>
+
+		<br/>
+
+		<div id = "content">
+
+			<br/>
+
+			<div id = "accordion"> 
+				<h4> Lorem </h4> 
+				<div> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> 
+					<img src = "images/weddings.png" width = "50%" height = "150px"> </div>
+				<h4> Proin </h4> 
+				<div> <p>Proin vel nunc pharetra, feugiat nibh quis, fermentum odio. </p>
+				<img src = "images/cake2.png" width = "50%" height = "150px"> </div>
+				<h4> Vivamus </h4>
+				<div> <p>Vivamus in mauris at augue elementum dignissim.</p> 
+					<img src = "images/cake3.png" width = "50%" height = "150px"> </div>
+				<h4> Sed </h4> 
+				<div> <p> Sed at nibh id diam molestie tincidunt.</p> 
+					<img src = "images/cake4.png" width = "50%" height = "150px"> </div>
+			</div> 
+
+			
+
+			<br/>
+
+			<div id = "video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/iLhlZciMfoQ" frameborder="0" allowfullscreen></iframe> </div> 
+
+			<br/>
+
+			<div id = "sth">
+			
+			<h1> Holidays </h1>
+			<hr/>
+			From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions! 
+
+			Easter is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.
+
+			</div> 
+
+			<br/>
+
+			<div id = "container-graph1"> </div> 
+
+			<div id = "container-graph2"> </div> 
+
+			<div id = "article"> 
+
+			<a href = "http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html" target = "_blank"> The Greatest Cake in America </a> 
+			“No cake made in any of the five boroughs of New York holds a candle to Prantl’s amazing burnt almond torte. It is possibly the BEST cake America has to offer.”
+			<a href = "http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html" target = "_blank"> HUFFINGTON POST </a>
+
+			</div>
+
+		</div>
+
+		<br/>
+
+		<hr> 
+
+		<div id = "sidebar"> 
+			<h3> Find Us </h3> 
+			<h4> Shadyside </h4> <br/>
+			5525 Walnut Street <br/>
+			Pittsburgh, PA 15232 <br/>
+			Phone number: 412-621-2092 <br/>
+			Email:
+			<a href = "mailto:info@prantlsbakery.com"> info@prantlsbakery.com </a> <br/> <br/>
+
+			<h4> Downtown </h4> <br/>
+			438 Market Street <br/>
+			Pittsburgh, PA 15222 <br/>
+			Phone number: 412-471-6861 <br/>
+			Email: 
+			<a href = "mailto:infoms@prantlsbakery.com"> infoms@prantlsbakery.com </a> <br/> <br/>
+
+			<hr> 
+			
+			<a href = "https://www.facebook.com/PrantlsBakery" target = "_blank"> <img src = "images/facebook.png"> </a>
+			<a href = "https://twitter.com/prantlsbakery" target = "_blank"> <img src = "images/twitter.png"> </a>
+			<a href = "https://www.instagram.com/prantls_bakery/" target = "_blank"> <img src = "images/instagram.png"> </a>
+
+		</div> 
+
+		<footer> 
+			Copyright &copy; 2010. Prantls Bakery. <br/>
+			All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively to Prantl's Bakery under applicable state law, federal law, and the Lanham Act. <br/> 
+			<a href = "mailto:info@prantlsbakery.com"> Contact Us </a> 
+		</footer> 
+
+	</div>
+
+</body> 
+</html>

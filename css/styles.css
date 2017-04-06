@@ -1,0 +1,201 @@
+/*Provides formatting for different elements on the website */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	line-height: 1.7em;
+	color: #000000;
+}
+
+#logo img {
+	display: block;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 10em;
+	border-width: 4px;
+	border: ridge;
+	border-color: #EAF5A6;
+}
+
+#content {
+	float: left;
+	width: 70%;
+	margin: 0;
+	padding: 0.5em;
+}
+
+#top_row {
+	float: left;
+}
+
+#top_row nav {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#top_row nav a {
+	font-family: 'Acme', sans-serif;
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight: 400;
+	padding: 15px;
+	color: #000000;
+}
+
+#top_row nav img {
+	width: 20%;
+	height: 20%;
+}
+
+#top_row nav a.selected {
+	background: #000000;
+	color: #00a665;
+}
+
+#top_row nav a.selected:hover {
+	background: #ffffff;
+	color: #00a665;
+}
+ 
+#top_row nav a:hover {
+	background: #00a665;
+	color: #ffffff;
+}
+
+#sidebar {
+	float: right;
+	font-size: .875em;
+}
+
+#sidebar img{
+	width:40px;
+	height:40px;
+}
+
+#sidebar h3 {
+	background: #00a665;
+}
+
+#sidebar h4 {
+	color: #00a665;
+}
+
+#container-graph1 {
+	width: 47%;
+	float: left;
+	padding: 5px;
+	border: inset;
+	border-color: #EAF5A6;
+}
+
+#container-graph2 {
+	width: 47%;
+	float: right;
+	padding: 5px;
+	border: inset;
+	border-color: #EAF5A6;
+}
+
+#video {
+}
+
+#tblimg img {
+	display: block;
+	margin: auto;
+	padding: 1em;
+	width: 90%;
+	height: 25em;
+}
+
+#content h1 {
+	font-family: 'Luckiest Guy'
+}
+
+#content a {
+	text-decoration: none;
+}
+
+#article {
+	display: block;
+	margin-right: auto; 
+	margin-left: auto;
+	float: right; 
+}
+
+footer {
+	clear: both;
+	margin: 0;
+	padding: 1em;
+	background: #00a665;
+	color: #ffffff;
+	font-variant: small-caps;
+	font-size: 1em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+}
+
+footer a {
+	text-decoration: none;
+	font-family: 'Acme', sans-serif;
+	color: #cbeec0
+
+}
+
+sup {
+	color: #ff0000;
+}
+th {
+	height: 40px;
+	font-weight: bold;
+}
+th, td {
+	padding: 2px;
+	text-align: center;
+	border-style: groove;
+	border-width: 0.2em;
+	border-color: #00a665;
+	color: #333333;
+}
+html { 
+	overflow-y: scroll; 
+}
+
+form {
+	width: 75%;
+	margin: auto;
+	border-style: groove;
+	border-width: 2em;
+	border-color: #00a665;
+	padding: 10px;	
+}
+
+iframe {
+  display:block;
+  margin:auto;
+}
+
+#written{
+	display: block;
+	margin: auto;
+	float: right;
+}
+
+#b img {
+	display: block;
+	float: left;
+	width: 60%;
+
+}
+
+#written h2 {
+	color: #00a665;
+	font-family: 'Luckiest Guy'
+}
+

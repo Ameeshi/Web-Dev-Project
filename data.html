@@ -1,0 +1,186 @@
+<!DOCTYPE = html> 
+<html lang = "en"> 
+<head>
+
+	<meta name = "author" content = "Ameeshi Goel">  
+	<title> Prantl's Bakery - Data </title>
+
+	<!-- DATA VISUALIZATION is my additional feature -->
+
+	<link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+
+	<script type = "text/javascript" src = "js/jquery-3.2.0.min.js"> </script> 
+	<script type = "text/javascript" src = "js/scripts.js"> </script> 
+
+	<script src = "http://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src = "http://code.highcharts.com/modules/exporting.js"></script>
+
+	<script type = "text/javaScript"> 
+	$(function() {
+			$('#graph1').highcharts({
+
+			chart: {
+		        plotBackgroundColor: null,
+		        plotBorderWidth: null,
+		        plotShadow: true,
+		        type: 'pie'
+		    },
+		    title: {
+		        text: 'Most Popular Items and their Sales Percentages'
+		    },
+		    tooltip: {
+		        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+		    },
+		    plotOptions: {
+		        pie: {
+		            allowPointSelect: true,
+		            cursor: 'pointer',
+		            dataLabels: {
+		                enabled: true,
+		                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+		                style: {
+		                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+		                }
+		            }
+		        }
+		    },
+		    series: [{
+		        name: 'Brands',
+		        colorByPoint: true,
+		        data: [{
+		            name: 'Burnt Almond Torte Cake',
+		            y: 56.33
+		        }, {
+		            name: 'Blueberry Pie',
+		            y: 24.03,
+		            sliced: true,
+		            selected: true
+		        }, {
+		            name: 'Apple Strudel Single',
+		            y: 10.38
+		        }, {
+		            name: 'Chocolate Sour Cream Cake',
+		            y: 4.77
+		        }, {
+		            name: 'Cookies and Cream Cup',
+		            y: 0.91
+		        }, {
+		            name: 'Others',
+		            y: 0.2
+		        }]
+		    }]
+				});
+			});
+
+	</script> 
+
+	<script type = "text/javaScript"> 
+	$(function() {
+			$('#graph2').highcharts({
+
+			chart: {
+				plotShadow: true,
+		        type: 'column',
+		        options3d: {
+		            enabled: true,
+		            alpha: 10,
+		            beta: 25,
+		            depth: 70
+		        }
+		    },
+		    title: {
+		        text: 'Total Sales in the Year'
+		    },
+		    subtitle: {
+		        text: 'in $100000 (Data unavailable for May'
+		    },
+		    plotOptions: {
+		        column: {
+		            depth: 40
+		        }
+		    },
+		    xAxis: {
+		        categories: Highcharts.getOptions().lang.shortMonths
+		    },
+		    yAxis: {
+		        title: {
+		            text: null
+		        }
+		    },
+		    series: [{
+		        name: 'Sales',
+		        data: [2, 3, null, 4, 0, 5, 1, 4, 6, 3, 6, 7]
+		    }]
+
+    	});
+			});
+
+	</script> 
+
+</head> 
+
+<body background = "images/bg.png"> 
+	<!--http://www.paleohub.info/key/p/words-pastel-green-background.html-->
+	<a href = "index.html" class = "selected"> <div id = "logo"> <img src = "images/prantls1.png" alt = "photo"> </div> </a>  
+
+	<br/>
+
+	<div id = "container">
+
+		<div id = "top_row">
+			<nav>
+				<a href = "index.html"> Home </a> 
+				<a href = "about.html"> About Us </a> 
+				<a href = "stores.html"> Store Info </a> 
+				<a href = "occasions.html"> Occasions </a> 
+				<a href = "contact.html"> Contact </a> 
+				<a href = "data.html" class = "selected"> Data </a>
+			</nav>
+
+		</div>
+
+		<br/>
+
+	<div id = "content">
+		<div id = "graph1"> </div> 
+
+		<br/>
+
+		<div id = "graph2"> </div>
+	</div> 
+
+	<hr>
+
+	<div id = "sidebar"> 
+		<h3> Find Us </h3> 
+		<h4> Shadyside </h4> <br/>
+		5525 Walnut Street <br/>
+		Pittsburgh, PA 15232 <br/>
+		Phone number: 412-621-2092 <br/>
+		Email:
+		<a href = "mailto:info@prantlsbakery.com"> info@prantlsbakery.com </a> <br/> <br/>
+
+		<h4> Downtown </h4> <br/>
+		438 Market Street <br/>
+		Pittsburgh, PA 15222 <br/>
+		Phone number: 412-471-6861 <br/>
+		Email: 
+		<a href = "mailto:infoms@prantlsbakery.com"> infoms@prantlsbakery.com </a> <br/> <br/>
+
+		<hr> 
+		
+		<a href = "https://www.facebook.com/PrantlsBakery" target = "_blank"> <img src = "images/facebook.png"> </a>
+		<a href = "https://twitter.com/prantlsbakery" target = "_blank"> <img src = "images/twitter.png"> </a>
+		<a href = "https://www.instagram.com/prantls_bakery/" target = "_blank"> <img src = "images/instagram.png"> </a>
+
+	</div> 
+
+	<footer> 
+		Copyright &copy; 2010. Prantls Bakery. <br/>
+		All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively to Prantl's Bakery under applicable state law, federal law, and the Lanham Act. <br/> 
+		<a href = "mailto:info@prantlsbakery.com"> Contact Us </a> 
+	</footer> 
+
+</body> 
+</html>

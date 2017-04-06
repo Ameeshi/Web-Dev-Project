@@ -1,0 +1,112 @@
+<!DOCTYPE = html> 
+<html lang = "en"> 
+<head>
+
+	<meta name = "author" content = "Ameeshi Goel">  
+	<title> Prantl's Bakery - Contact </title>
+
+	<!-- DATA VISUALIZATION is my additional feature -->
+
+	<link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css">
+
+	<script type = "text/javascript" src = "js/jquery-3.2.0.min.js"> </script> 
+	<script type = "text/javascript" src = "js/scripts.js"> </script> 
+
+</head>
+
+<body background = "images/bg.png"> 
+	<!--http://www.paleohub.info/key/p/words-pastel-green-background.html-->
+	<a href = "index.html" class = "selected"> <div id = "logo"> <img src = "images/prantls1.png" alt = "photo"> </div> </a> 
+
+	<br/>
+
+	<div id = "container">
+
+		<div id = "top_row">
+			<nav>
+				<a href = "index.html"> Home </a> 
+				<a href = "about.html"> About Us </a> 
+				<a href = "stores.html"> Store Info </a>
+				<a href = "occasions.html"> Occasions </a>  
+				<a href = "contact.html" class = "selected"> Contact </a> 
+				<a href = "data.html"> Data </a> 
+			</nav>
+
+		</div>
+
+		<br/>
+
+		<div id = "content">
+
+			<br/>
+
+			<form onsubmit = "return validate()" method = "post" action = "mailto:infoneeded@prantlsbakery.com"> 
+				<fieldset> 
+					
+					<legend> Please use the form below to get in touch with us </legend>
+					
+					<label for = "uname"> Name<sup>*</sup> </label> <br/>
+					<input type = "text" id = "uname" name ="Name:" size = "20" maxlength = "250" placeholder = "Your Name" required> <br/> </br> 
+
+					<label for = "zipcode"> Zip Code </label> <br/>
+					<input type = "text" id = "zipcode" name = "Zipcode:" maxlength = "5"> <br/> <br/>
+
+					<label for = "emailid"> Email Address<sup>*</sup> </label> <br/> 
+					<input type = "email" placeholder = "abc@defg.com" id = "emailid" required> <br/> <br/>
+
+					<label for = "inquiry"> Your Inquiry </label> <br/>
+					<textarea rows = "15" cols = "80" maxlength = "1500" id = "inquiry" required> </textarea> <br/> <br/>
+
+					<label for = "blah"> Please indicate if you want to subscribe to Prantl's mailing list </label> <br/> 
+					<input type = "checkbox" name = "Yes, Please update me!" id = "blah"> Yes <br/> <br/>
+
+					<sup> Fields with * are required. </sup> <br/> <br/>
+
+					
+				</fieldset> 
+
+				<fieldset>
+					<input type = "image" src = "images/submit.png" alt = "submit">
+				</fieldset>
+
+			</form>
+
+			<hr> 
+
+		</div> 
+		<div id = "sidebar"> 
+			<h3> Find Us </h3> 
+			<h4> Shadyside </h4> <br/>
+			5525 Walnut Street <br/>
+			Pittsburgh, PA 15232 <br/>
+			Phone number: 412-621-2092 <br/>
+			Email:
+			<a href = "mailto:info@prantlsbakery.com"> info@prantlsbakery.com </a> <br/> <br/>
+
+			<h4> Downtown </h4> <br/>
+			438 Market Street <br/>
+			Pittsburgh, PA 15222 <br/>
+			Phone number: 412-471-6861 <br/>
+			Email: 
+			<a href = "mailto:infoms@prantlsbakery.com"> infoms@prantlsbakery.com </a> <br/> <br/>
+
+			<hr> 
+			
+			<a href = "https://www.facebook.com/PrantlsBakery" target = "_blank"> <img src = "images/facebook.png"> </a>
+			<a href = "https://twitter.com/prantlsbakery" target = "_blank"> <img src = "images/twitter.png"> </a>
+			<a href = "https://www.instagram.com/prantls_bakery/" target = "_blank"> <img src = "images/instagram.png"> </a>
+
+		</div> 
+
+		<footer> 
+			Copyright &copy; 2010. Prantls Bakery. <br/>
+			All trademarks including 'Burnt Almond Torte' and related trade dress are reserved exclusively to Prantl's Bakery under applicable state law, federal law, and the Lanham Act. <br/> 
+			<a href = "mailto:info@prantlsbakery.com"> Contact Us </a> 
+		</footer> 
+
+    </div> 
+
+</body>
+
+</html> 
+
